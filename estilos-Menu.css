@@ -1,0 +1,151 @@
+/* ======================
+   RESET Y BASE
+====================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0F172A;
+    padding: 40px 20px;
+    color: #FACC15;
+}
+
+/* ======================
+   TÍTULOS
+====================== */
+h1 {
+    text-align: center;
+    color: #FACC15;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #FACC15;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+h3 {
+    color: #FACC15;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    color: #FACC15;
+    margin-top: 40px;
+}
+
+/* ======================
+   GRID DE MATERIAS
+====================== */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ======================
+   TARJETAS DE MATERIAS
+====================== */
+.materia {
+    background-color: #020617;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Imagen */
+.materia img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Título */
+.materia a {
+    display: block;
+    padding: 18px 20px 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #14B8A6;
+    text-decoration: none;
+}
+
+/* Texto */
+.materia p {
+    padding: 10px 20px 22px;
+    color: #FACC15;
+    line-height: 1.6;
+}
+
+/* Hover suave */
+.materia:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(20, 184, 166, 0.35);
+}
+
+/* ======================
+   FOOTER Y HR
+====================== */
+hr {
+    margin: 40px 0;
+    border: 1px solid #14B8A6;
+}
+
+footer p {
+    text-align: center;
+    margin: 6px 0;
+    color: #FACC15;
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+@media (min-width: 900px) {
+    body {
+        max-width: 1400px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
+     /* Estilos adicionales para centrar y mejorar las imágenes */
+        .materia img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .materia {
+            background-color: #02123b;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
